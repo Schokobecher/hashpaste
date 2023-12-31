@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>HashBin</title>
+    <title>HashPaste</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <style>
@@ -82,20 +82,19 @@
     <div id='tools'>
         <a href='#' id='share'>Share</a> |
         <a href='#' id='new'>New</a> |
-        <a href='#' id='download' download='hashbin-download.txt'>Download</a> |
-        <a href='https://github.com/captbaritone/hashb.in' target='_blank'>?</a>
+        <a href='#' id='download' download='hashpaste-download.txt'>Download</a> |
+        <a href='https://github.com/Schokobecher/hashpaste' target='_blank'>?</a>
 
         <input id='urlInput'>
     </div>
-    <textarea spellcheck="false" id="t">HashBin is a paste bin that never sees the contents of its pastes.
-I posit, that it should be immune to takedown notices.
+    <textarea spellcheck="false" id="t">HashPaste is a paste bin that never sees the contents of its pastes.
 
 - Click "New" to create your own paste
 - Click "?" to learn more
 
 
 --
-Jordan Eldrege (@captbaritone)</textarea>
+</textarea>
     <script language="javascript" src="js/lz-string.min.js"></script>
     <script>
         var f;
@@ -123,7 +122,7 @@ Jordan Eldrege (@captbaritone)</textarea>
         }
 
         function title() {
-            return textarea.value ? textarea.value.slice(0,30) : 'HashBin';
+            return textarea.value ? textarea.value.slice(0,30) : 'HashPaste';
         }
 
         function filename() {
